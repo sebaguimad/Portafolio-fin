@@ -52,7 +52,9 @@ function cargarTablaProductos() {
                 <td>${productoConDetalles.precio}</td>
                 <td>${productoConDetalles.descuento}</td>
                 <td>${precioUnitario}</td>
-                <td>${producto.cantidad}</td>
+                <td class="table__cantidad">
+                <input type="number" min="1" value=${producto.cantidad} class="input__elemento">
+                </td>
                 <td>${totalProducto}</td>
             </tr>
     `;
