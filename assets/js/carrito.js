@@ -53,7 +53,8 @@ function cargarTablaProductos() {
                 <td>${productoConDetalles.descuento}</td>
                 <td>${precioUnitario}</td>
                 <td class="table__cantidad">
-                <input type="number" min="1" value=${producto.cantidad} class="input__elemento">
+                <input id="n" type="number" min="1" value=${producto.cantidad} class="input__elemento">
+                <button id="btn-borrar" class="delete btn btn-danger" value="clear" onclick="clearInput()">x</button>
                 </td>
                 <td>${totalProducto}</td>
             </tr>
@@ -66,6 +67,8 @@ function cargarTablaProductos() {
     document.querySelector("#precio-total").innerHTML = `El precio total de la compra es: <strong>$${precioTotalCompra}</strong>`
 }
 
+
+
 function encontrarProducto(sku){
   let encontrado = productos.find(producto => producto.sku == sku)
   return encontrado;
@@ -77,6 +80,14 @@ document.getElementById("btn-vaciar").addEventListener("click", function(event){
   localStorage.setItem("productos", "[]");
   location.reload();
 })
+
+//LÓGICA RESETEAR INPUT
+function clearInput(){
+  var getValue= document.getElementById("n");
+    if (getValue.value !="") {
+        getValue.value = "";
+    }
+}
 
 //LÓGICA DESCUENTO POR CUPÓN
 document.getElementById("btn-descuento").addEventListener("click", function(event){
@@ -93,3 +104,4 @@ document.getElementById("btn-descuento").addEventListener("click", function(even
   alert("El cupón no existe.")
  }
 })
+
