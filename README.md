@@ -11,11 +11,3 @@
 -Y una página para logear el cual a través de  una función que toma a form y los elementos que insertan en ello y contrasta el usuario identificado y su password con los usuario que asignamos por defecto "Pedro" y "Carlos" con sus respectivos password para verificar su funcionamiento.
 
 -Tiene un sistema CRUD, el cual funciona con modularización de el archivo de datos, que sin embargo, no me deja funcionando el resto de la página, necesito feedback sobre ésto, ya que creo que la implementación de los módulos dejó de alguna manera inutibilizable el resto de lógicas.
-# Portafolio-3
-# Portafolio-3
-# Portafolio-3
-# Portafolio-3
-# portafolio-3
-# Portafolio-fin
-# Portafolio-fin
-# Portafolio-fin
