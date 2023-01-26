@@ -5,6 +5,8 @@ let productos = [
       descripcion: "Descripcion producto 1",
       precio: 1000,
       descuento: 100,
+      cantidad: 6,
+      categoria: "gamer",
       imagen: "https://i.blogs.es/b25093/silla-gaming-woxter/450_1000.webp",
     },
     {
@@ -13,6 +15,8 @@ let productos = [
       descripcion: "Descripcion producto 2",
       precio: 1500,
       descuento: 500,
+      cantidad: 9,
+      categoria: "gamer",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-FeBPz8IzjH2hbhmNZLRQ7QpQujVGapL3g&usqp=CAU",
     },
     {
@@ -21,6 +25,8 @@ let productos = [
       descripcion: "Descripcion producto 3",
       precio: 2000,
       descuento: 200,
+      cantidad: 10,
+      categoria: "gamer",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_PXnqYoroo1-v6Wo6ck9nav1FxUDEBBQzQ&usqp=CAU",
     },
     {
@@ -29,6 +35,8 @@ let productos = [
       descripcion: "Descripcion producto 4",
       precio: 2050,
       descuento: 200,
+      cantidad: 4,
+      categoria: "madera",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlB8fj7ZbfI8g91l-Qpjmxa6oWjp2CICJTKQ&usqp=CAU",
     },
     {
@@ -37,6 +45,8 @@ let productos = [
       descripcion: "Descripcion producto 5",
       precio: 2550,
       descuento: 200,
+      cantidad: 2,
+      categoria: "madera",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRia841GuDgGwr7iWWzZOmNYSKHR-BIdbZ_NQ&usqp=CAU",
     },
     {
@@ -45,6 +55,41 @@ let productos = [
       descripcion: "Descripcion producto 6",
       precio: 2850,
       descuento: 200,
+      cantidad: 3,
+      categoria: "madera",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1DyHFUwhwVgkfb7FSzLoqAyRHLvQHWk55g&usqp=CAU",
     },
-  ];
+    {
+      sku: "0007",
+      nombre: "Silla Metalica 1",
+      descripcion: "Descripcion producto 7",
+      precio: 3000,
+      descuento: 200,
+      cantidad: 3,
+      categoria: "metalica",
+      imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgcoohcKq8YonbdLad9oXBOqx2R2XtGV8yTw&usqp=CAU",
+    },
+    {
+      sku: "0008",
+      nombre: "Silla Metalica 2",
+      descripcion: "Descripcion producto 8",
+      precio: 3000,
+      descuento: 200,
+      cantidad: 9,
+      categoria: "metalica",
+      imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TfdXvS93bdMOa6wwvSl4dzxsfREdIscGBA&usqp=CAU",
+    },
+    {
+      sku: "0009",
+      nombre: "Silla Metalica 2",
+      descripcion: "Descripcion producto 8",
+      precio: 3000,
+      descuento: 200,
+      cantidad: 9,
+      categoria: "metalica",
+      imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYgjw27u9XkwzuqgnOXZ1Mac5crDwUiHxddw&usqp=CAU",
+    }, 
+];
+
+
+export default productos;

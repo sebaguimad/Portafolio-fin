@@ -1,3 +1,5 @@
+import productos from './productos.js';
+
 // Se define array vacío:
 let productosCarro = [];
 
@@ -30,7 +32,7 @@ function cargarProductos(listadoProductos) {
                     <p class="card-text">Precio Normal: $ ${producto.precio}</p>
                     <p class="card-text text-danger">Descuento: -  $ ${producto.descuento}</p>
                     <p class="card-text text-success">Precio final: $ ${producto.precio - producto.descuento}</p>
-                    <a class="btn btn-primary" data-sku="${producto.sku}" onclick="addToCart('${producto.sku}')">Comprar</a>
+                    <a class="btn btn-primary" data-sku="${producto.sku}" id="btnaddToCart" onclick="addToCart('${producto.sku}')">Comprar</a>
                   </div>
               </div>
           </div>
@@ -43,6 +45,9 @@ function cargarProductos(listadoProductos) {
   document.querySelector("#productos .row").innerHTML = acumulador;
 }
   
+cargarProductos(productos);
+
+
 // Función que añade productos a la carta
 function addToCart(sku) {
   // Se define el objProducto con sus claves sku y cantidad

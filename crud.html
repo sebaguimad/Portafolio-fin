@@ -39,10 +39,12 @@
               <a class="nav-link active" aria-current="page" href="./buscador.html">Buscador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./crud.html">Mantenedor</a>
+                <a class="nav-link active" aria-current="page" href="./crud.html">Mantenedor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="nav-link" href="./carrito.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="cantidad-productos">0</a>
@@ -56,13 +58,51 @@
     </nav>
     <!-- FIN NAVBAR -->
     <!-- CONTENIDO PRINCIPAL DEL BODY -->
+    <h1 class="text-center mt-5">MANTENEDOR DE PRODUCTOS</h1>
     <main class="container">
-      <section id="productos">
-        <h1 class="text-center my-5" style="border-bottom: solid;">CATÁLOGO DE PRODUCTOS</h1>
-        <div class="row">
-          <!-- CARGAR PRODUCTOS DE FORMA DINÁMICA EN UNA FILA-->
-        </div>
-      </section>
+        <section class="section_crud py-5 mx-auto" style="width:400px;">
+            <form id="crud_form">
+                <label for="crud_sku" class="form-label">sku:</label>
+                <input class="form-control" type="text" id="crud_sku">
+                <label for="crud_nombre" class="form-label">Nombre:</label>
+                <input class="form-control" type="text" id="crud_nombre">
+                <label for="crud_descripcion" class="form-label">Descripcion:</label>
+                <input class="form-control" type="text" id="crud_descripcion">
+                <label for="crud_precio" class="form-label">Precio:</label>
+                <input class="form-control" type="number" id="crud_precio" value="0">
+                <label for="crud_precio" class="form-label">Descuento:</label>
+                <input class="form-control" type="number" id="crud_descuento" value="0">
+                <label for="crud_stock" class="form-label">Stock:</label>
+                <input class="form-control" type="number" id="crud_cantidad" value="0">
+                <label for="crud_stock" class="form-label">Categoría:</label>
+                <input class="form-control" type="text" id="crud_categoria">
+                <label for="crud_stock" class="form-label">Imagen:</label>
+                <input class="form-control" type="text" id="crud_imagen">
+                <button type="button" class="btn btn-primary my-2" id="btn-agregar">Agregar</button>
+                <button type="button" class="btn btn-warning my-2" id="btn-modificar">Modificar</button>
+                <button type="button" class="btn btn-danger my-2" id="btn-eliminar">Eliminar</button>
+            </form>
+        </section>
+
+        <section class="section_mantenedor_productos">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Descuento</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Categoría</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <!-- AQUÍ SE CARGARÁN LOS PRODUCTOS -->
+                </tbody>
+              </table>
+            
+        </section> 
     </main>
     <!-- FIN CONTENIDO PRINCIPAL DEL BODY -->
     <!-- INICIO FOOTER -->
@@ -84,8 +124,7 @@
     crossorigin="anonymous"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script type="module" src="./assets/js/productos.js"></script>
-    <script type="module" src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/crud.js"></script>
     <!-- FIN REFERENCIAS A SCRIPTS EJECUTABLES -->
   </body>
 </html>

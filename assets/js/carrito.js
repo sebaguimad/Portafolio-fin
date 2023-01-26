@@ -1,3 +1,4 @@
+import productos from './productos.js';
 // Se define el objeto cupones, para aplicar la lógica de los cupones:
 let cupones = [
   {
