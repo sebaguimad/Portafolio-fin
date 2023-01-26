@@ -1,8 +1,8 @@
 # Página e-comerce: Sebastián Aguilera Madariaga
 
--URL del repositorio: https://github.com/sebaguimad/Portafolio-2
+-URL del repositorio: https://github.com/sebaguimad/Portafolio-fin
 
--URL del proyecto: https://sebaguimad.github.io/Portafolio-2/
+-URL del proyecto: https://sebaguimad.github.io/Portafolio-fin/
 
 -Esta página posee un catálogo de productos (index.html). El cual muestra en un display productos añadidos de forma dinámica mediante un script de javascript los cuales cuando se pulsa el botón añadir al carro aumenta el contador del carro y se guardan los valores en una tabla en la página del carro de compras.
 
